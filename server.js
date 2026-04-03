@@ -19,7 +19,7 @@ const Url = mongoose.model("Url", {
 
 // ✅ Generate code
 const generateCode = () =>
-  Math.random().toString(36).substring(2, 7);
+  Math.random().toString(36).substring(2, 5);
 
 // ✅ Shorten API
 app.post("/shorten", async (req, res) => {
